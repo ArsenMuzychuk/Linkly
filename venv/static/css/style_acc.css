@@ -1,0 +1,218 @@
+.account{
+    width: 100%;
+    height: 100%;
+    font-family: "Mona Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.all_content{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.up{
+    display: flex;
+    justify-content: center;
+}
+
+.doise{
+    background-color: white;
+    position: absolute;
+    padding: 40px;
+    top: 250px;
+    width: 60%;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 33px -20px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 33px -20px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 33px -20px rgba(0,0,0,0.75);
+}
+
+.avatar_image_acc{
+    z-index:2;
+}
+
+.doise_up{
+    display:flex;
+    justify-content: space-between;
+}
+
+.exit{
+    background-color: #CCD0CF;
+    padding:10px 25px;
+    border-radius: 999px;
+    font-weight: 800;
+    opacity: .8;
+    -webkit-box-shadow: 0px 0px 13px -10px rgba(56,56,56,1);
+    -moz-box-shadow: 0px 0px 13px -10px rgba(56,56,56,1);
+    box-shadow: 0px 0px 13px -10px rgba(56,56,56,1);
+}
+
+.set_edit{
+    background-color: #CCD0CF;
+    padding:10px 3px;
+    border-radius: 999px;
+    font-weight: 800;
+    opacity: .8;
+    -webkit-box-shadow: inset 0px 0px 13px -10px rgba(56,56,56,1);
+    -moz-box-shadow: inset 0px 0px 13px -10px rgba(56,56,56,1);
+    box-shadow: inset 0px 0px 13px -10px rgba(56,56,56,1);
+}
+
+.set_edit .set_edit_span{
+    border-radius: 999px;
+    padding: 7px 15px;
+    z-index:4;
+    transition: opa
+}
+
+.set_edit_show{
+    background-color: white;
+    -webkit-box-shadow: 0px 0px 13px -10px rgba(56,56,56,1);
+    -moz-box-shadow: 0px 0px 13px -10px rgba(56,56,56,1);
+    box-shadow: 0px 0px 13px -10px rgba(56,56,56,1);
+}
+
+.profile_form {}
+
+.form_group {
+    margin-bottom: 20px;
+}
+
+.form_group label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.form_group > .input, .form_group textarea{
+    width: 97%;
+    padding: 8px 1.5%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    background-color: var(--input-bg);
+    border-radius: 8px;
+    width: 100%;
+    outline: none;
+}
+
+input , textarea{
+    padding: 3px 0px;
+    background-color: var(--input-bg);
+    border: none;
+    font-size: 13px;
+    width: 100%;
+    outline: none;
+}
+
+.form_profile .form_group_2 .input{
+    width: 94%;
+    padding: 8px 3%;
+}
+
+.form_group_2{
+    display:flex;
+    width: 100%;
+}
+
+.form_group_2 .form_group{
+    width: 100%;
+}
+
+.form_group:first-child{
+    margin-right: 20px;
+}
+
+.save_button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #06141B;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.save_button:hover {
+    background-color: #4cae4c;
+}
+
+.form_profile{
+    margin-top: 80px;
+}
+
+.profile_info h2{
+    margin: 60px 0px 20px 0px;
+}
+.profile_info {
+    display: flex;
+    gap: 20px;
+}
+
+.profile-details {
+    flex: 1;
+}
+
+.google-map {
+    flex: 2;
+    position: relative;
+    margin-top: 60px;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+
+#info{
+    resize: none;
+}
+
+.form_group div.error {
+    border: 2px solid red;
+}
+
+.err_icon{
+    display: none;
+}
+
+.err_icon_show{
+    display: block;
+}
+.error_message {
+    color: red;
+    display: none;
+    padding: 0px;
+    margin: 0px;
+    margin-left: .2rem;
+    align-self: start;
+}
+
+.error_message.show {
+    display: block;
+}
+
+.form_profile .is04{
+    display = none;
+}
+
+@media (max-width: 900px) {
+    .avatar_image_acc{
+        width: 40%;
+    }
+    .doise{
+        width: 80%;
+    }
+}

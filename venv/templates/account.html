@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/style_home.css">
+    <link rel="stylesheet" href="../static/css/style_acc.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <title>Linkly</title>
+</head>
+<body style="background-image: url('../static/image/BG_02.jpg');">
+    <div class="header">
+        <div class="left">
+            <ul>
+                <div><span class="Header_text" id="Header_text_01">Linkly</span></div>
+                <li>
+                    <span class="header_left_text">Select model👇</span>
+                    <div class="header_left_vars">
+                        <p class="header_left_vars_main">Linkly v1.0</p>
+                        <p class="header_left_vars_others">The only version available</p>
+                        <p class="header_left_vars_main n_2">Linkly v2.0</p>
+                        <p class="header_left_vars_others">Will be released soon</p>
+                    </div>
+                </li>
+                <li class="link_home">Inspiration</li>
+                <li class="link_work">Work</li>
+            </ul>
+        </div>
+        <div><span class="Header_text" id="Header_text_02">Linkly</span></div>
+        <div class="right">
+            <form class="search" action="/search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" viewBox="0 0 17 17" fill="none" role="img" class="search_icon">
+                    <path d="M1.5 7.75C1.5 9.4076 2.15848 10.9973 3.33058 12.1694C4.50269 13.3415 6.0924 14 7.75 14C9.4076 14 10.9973 13.3415 12.1694 12.1694C13.3415 10.9973 14 9.4076 14 7.75C14 6.0924 13.3415 4.50269 12.1694 3.33058C10.9973 2.15848 9.4076 1.5 7.75 1.5C6.0924 1.5 4.50269 2.15848 3.33058 3.33058C2.15848 4.50269 1.5 6.0924 1.5 7.75V7.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12.814 12.8132L15.5 15.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <input type="text" class="search_text" placeholder="Search..." autocomplete="off">
+            </form>
+            <img class="avatar_image" alt="Name" width="40" height="40" src="../static/image/man.png">
+        </div>
+    </div>
+    <hr>
+    <div class="account">
+        <div class="all_content">
+            <div class="up">
+                <img class="avatar_image_acc" alt="Name" width="250" src="../static/image/man.png">
+                <div class="doise">
+                    <div class="doise_up">
+                        <div class="set_edit">
+                            <span class="set_edit_span">Edit</span>
+                            <span class="set_edit_span set_edit_show">Show</span>
+                        </div>
+                        <div class="exit">
+                            <span id="exit">Exit</span>
+                        </div>
+                    </div>
+                    <form class="form_profile" style="display: none;">
+                        <div class="form_group_2">
+                            <div class="form_group">
+                                <label for="first_name">First Name</label>
+                                <div class="input">
+                                    <input type="text" id="first_name" name="first_name" required>
+                                </div>
+                            </div>
+                            <div class="form_group">
+                                <label for="last_name">Last Name</label>
+                                <div class="input">
+                                    <input type="text" id="last_name" name="last_name" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <label for="username">Username</label>
+                            <div class="input in1">
+                                <input type="text" id="username" name="location" required>
+                                <img src="/static/image/error.png" class="err_icon i01" width="20px" height="20px">
+                            </div>
+                            <span class="error_message em01"></span>
+                        </div>
+                        <div class="form_group">
+                            <label for="email">Email</label>
+                            <div class="input in2">
+                                <input type="email" id="email" name="email" disabled="disabled" required>
+                                <img src="/static/image/error.png" class="err_icon i02" width="20px" height="20px">
+                            </div>
+                            <span class="error_message em02"></span>
+                        </div>
+                        <div class="form_group_2">
+                            <div class="form_group">
+                                <label for="password">Change Password</label>
+                                <div class="input in3">
+                                    <input type="password" id="password" name="password" required>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" class="icon_show is01" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                        <path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" style="display: none;" class="icon_show is02" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                        <path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"/>
+                                    </svg>
+                                </div>
+                                <span class="error_message em03"></span>
+                            </div>
+                            <div class="form_group">
+                                <label for="new_password">New Password</label>
+                                <div class="input in4">
+                                    <input type="password" id="new_password" name="new_password" required>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" class="icon_show is03" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                        <path d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z"/>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" height="24px" style="display: none;" class="icon_show is04" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+                                        <path d="m644-428-58-58q9-47-27-88t-93-32l-58-58q17-8 34.5-12t37.5-4q75 0 127.5 52.5T660-500q0 20-4 37.5T644-428Zm128 126-58-56q38-29 67.5-63.5T832-500q-50-101-143.5-160.5T480-720q-29 0-57 4t-55 12l-62-62q41-17 84-25.5t90-8.5q151 0 269 83.5T920-500q-23 59-60.5 109.5T772-302Zm20 246L624-222q-35 11-70.5 16.5T480-200q-151 0-269-83.5T40-500q21-53 53-98.5t73-81.5L56-792l56-56 736 736-56 56ZM222-624q-29 26-53 57t-41 67q50 101 143.5 160.5T480-280q20 0 39-2.5t39-5.5l-36-38q-11 3-21 4.5t-21 1.5q-75 0-127.5-52.5T300-500q0-11 1.5-21t4.5-21l-84-82Zm319 93Zm-151 75Z"/>
+                                    </svg>
+                                </div>
+                                <span class="error_message em04"></span>
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <label for="email">Info</label>
+                            <textarea id="info" name="comment" rows="4" cols="50" ></textarea>
+                        </div>
+                        <button type="submit" class="save_button" id="save_changes">Save Changes</button>
+                    </form>
+                    <div class="profile_info">
+                        <div class="profile-details">
+                            <h2>Profile Information:</h2>
+                            <div class="form_group">
+                                <label>Name:</label>
+                                <span id="name_display">John Doe</span>
+                            </div>
+                            <div class="form_group">
+                                <label>Username:</label>
+                                <span id="username_display">johndoe</span>
+                            </div>
+                            <div class="form_group">
+                                <label>Email:</label>
+                                <span id="email_display">johndoe@example.com</span>
+                            </div>
+                            <div class="form_group">
+                                <label>Status:</label>
+                                <span id="status_display">Trainee</span>
+                            </div>
+                            <div class="form_group">
+                                <label>Info:</label>
+                                <span id="info_display">I am a relentless seeker of knowledge, dedicated to the pursuit of scientific discovery. I am unafraid to break barriers and challenge norms, believing in the power of research to change the world.</span>
+                            </div>
+                        </div>
+                        <div class="google-map" id="map">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../static/js/script_home.js"></script>
+    <script src="../static/js/script_acc.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+</body>
+</html>

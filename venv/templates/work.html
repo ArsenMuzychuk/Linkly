@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../static/css/style_home.css">
+    <link rel="stylesheet" href="../static/css/style_work.css">
+    <title>Linkly</title>
+</head>
+<body style="background-image: url('../static/image/BG_02.jpg');">
+    <div class="header">
+        <div class="left">
+            <ul>
+                <div><span class="Header_text" id="Header_text_01">Linkly</span></div>
+                <li>
+                    <span class="header_left_text">Select model👇</span>
+
+                    <div class="header_left_vars">
+                        <p class="header_left_vars_main">Linkly v1.0</p>
+                        <p class="header_left_vars_others">The only version available</p>
+                        <p class="header_left_vars_main n_2">Linkly v2.0</p>
+                        <p class="header_left_vars_others">Will be released soon</p>
+                    </div>
+                  </li>
+                <li class="link_home">Inspiration</li>
+                <li class="link_work">Work</li>
+              </ul>
+        </div>
+        <div><span class="Header_text" id="Header_text_02">Linkly</span></div>
+        <div class="right">
+            <form class="search" action="/search">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15"viewBox="0 0 17 17" fill="none" role="img" class="search_icon">
+                    <path d="M1.5 7.75C1.5 9.4076 2.15848 10.9973 3.33058 12.1694C4.50269 13.3415 6.0924 14 7.75 14C9.4076 14 10.9973 13.3415 12.1694 12.1694C13.3415 10.9973 14 9.4076 14 7.75C14 6.0924 13.3415 4.50269 12.1694 3.33058C10.9973 2.15848 9.4076 1.5 7.75 1.5C6.0924 1.5 4.50269 2.15848 3.33058 3.33058C2.15848 4.50269 1.5 6.0924 1.5 7.75V7.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M12.814 12.8132L15.5 15.4999" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                <input type="text" class="search_text" placeholder="Search..." autocomplete="off">
+            </form>
+            <img class="avatar_image" alt="Name" width="40" height="40" src="../static/image/man.png">
+        </div>
+    </div>
+    <hr>
+    <div class="main" >
+        <div class="work">
+            <div class="work_center">
+                <div class="linky">
+                    <h1>Link shortening</h1>
+                    <div class="form_group">
+                        <label for="correct_link">Correct link here:</label>
+                        <div class="input">
+                            <input type="text" id="correct_link" required>
+                        </div>
+                    </div>
+                    <div class="form_group">
+                        <label for="new_link">New link here:</label>
+                        <div class="input">
+                            <input type="text" id="new_link"required>
+                        </div>
+                    </div>
+                    <div class="bottom_button">
+                        <button id="button_add_link">Add link</button>
+                        <div id="colors_button">
+                            <button class="c01 color_button">Auburn</button>
+                            <button class="c02 color_button">Softer Tan</button>
+                            <button class="c03 color_button">Yellow</button>
+                            <button class="c04 color_button">Oakmoss</button>
+                            <button class="c05 color_button">Waterloo</button>
+                            <button class="c06 color_button selected">Cyberspace</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="Link_Library">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../static/js/script_home.js"></script>
+    <script src="../static/js/script_work.js"></script>
+</body>
+</html>
